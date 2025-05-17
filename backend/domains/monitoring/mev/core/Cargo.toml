@@ -1,0 +1,12 @@
+[package]
+name = "mev-detector"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "mevdetector"
+crate-type = ["cdylib"]
+
+[dependencies]
+cxx = "1.0"
+serde = { version = "1.0", features = ["derive"] }
