@@ -52,3 +52,10 @@ graph TD
 ```bash
 # With one-click installers
 curl -sSL https://install.smartguard.ai | bash -s -- --with-ml
+import requests
+
+response = requests.post(
+    "https://api.smartguard.ai/v1/detect",
+    json={"tx_hash": "0x..."},
+    headers={"Authorization": "Bearer YOUR_API_KEY"}
+)
